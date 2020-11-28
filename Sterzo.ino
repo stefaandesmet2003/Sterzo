@@ -342,8 +342,7 @@ void loop() {
     KX022_DoInterrupts();
 
 
-  //TEMP if (bleConnected) {
-  if (true) {
+  if (bleConnected) {
     // notify crank revs every second
     if (millis() - bleNotifyMillis > 1000) {
       //bleNotifyCrankRevs ();
